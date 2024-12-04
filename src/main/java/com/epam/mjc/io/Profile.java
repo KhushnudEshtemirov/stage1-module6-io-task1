@@ -9,9 +9,8 @@ public class Profile {
     private String email;
     private Long phone;
 
-    public Profile() {
+    public Profile() {}
 
-    }
     public Profile(String name, Integer age, String email, Long phone) {
         this.name = name;
         this.age = age;
@@ -49,17 +48,6 @@ public class Profile {
 
     public void setPhone(Long phone) {
         this.phone = phone;
-    }
-
-    @Override
-    public String toString() {
-        final StringBuilder sb = new StringBuilder("Profile{");
-        sb.append("name='").append(name).append('\'');
-        sb.append(", age=").append(age);
-        sb.append(", email='").append(email).append('\'');
-        sb.append(", phone=").append(phone);
-        sb.append('}');
-        return sb.toString();
     }
 
     @Override
